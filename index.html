@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ping-Pong Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Ping-Pong</h1>
+      <div id="container">
+        <div id="terrain">
+            <div id="ball"></div>
+            <div id="wall"></div>
+            <div id="player"></div>
+        </div>
+        <div id="bottom"> 
+            <div id="setup">
+                <div>Your score: <span id="score">0</span> points</div>
+                <label id = "label1"> Use keyboard / direction buttons </label>
+                <br>
+                <button id="start" onclick="start()">START</button>
+                <button id="stop" onclick="stop()">STOP</button>
+            </div>
+            <div id = controls>
+                <button id="up" onmousedown="control()">UP</button>
+                <button id="down" onmousedown="control()">DOWN</button>
+            </div>
+        </div>   
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
